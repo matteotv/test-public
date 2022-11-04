@@ -18,7 +18,7 @@ jobs:
 
   # This workflow contains a single job called "build"
   build:
-    if:  startsWith(github.head_ref, 'feature/')
+    if:  startsWith(github.head_ref, 'master')
 #     if: github.event.review.state == 'approved' && github.head_ref == 'master'
 #     if: github.event.pull_request.merged == true
     # The type of runner that the job will run on
